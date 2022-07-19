@@ -1,47 +1,42 @@
-# My approach is to figure out the patterns and when I'm done work on the inputs
-# I am not very experienced with functions so you will not see any.
-# As a result I have to repeat a lot of code
-num = 5 #int(input("Input any number from 1 to 5: "))
 """
-for i in range(num):
-    for j in range(i+1):
-        print('*', end=' ')
-    print()
+Asher,
+     I am not very experienced with functions so you will not see any.
+    As a result I have to repeat a lot of code.
 """
-"""
-if num < 6:
-    for r in range(num-1):
-        for c in range(r, num):
-            print(' ', end=' ')
-        for c in range(r+1):
-            print('*', end=' ')
-        for c in range(r):
-            print('*', end=' ')
+# This take input from the user within the range 1 to 5.
+num = int(input("Input any number from 1 to 5: "))
+# This starts the condition for the defined range.
 
-        #  for c in range(r):
-       #     print('*', end=' ')
-
+if num < 6: # This block will be executed only if the input falls within the specified range.
+    if num == 1: # This is for when the input is 1.
+        # Asher, I will need your help with this pattern.
         print()
-    for r in range(num):
-        for c in range(r+1):
-            print(' ', end=' ')
-        for c in range(r, num):
-            print('*', end=' ')
-        for c in range(r, num-1):
-            print('*', end=' ')
+    elif num == 2: # This is for when the input is 2.
+        for row in range(5):
+            for col in range(row + 1):
+                print('*', end=' ')
+            print()
+    elif num == 3: # This is for when the input is 3.
+        for r in range(5):
+            for c in range(9):
+                if (r + c == 4) or (c - r == 4):
+                    print('*', end=' ')
+                else:
+                    print(' ', end=' ')
+            print()
+    elif num == 4: # This is for when the input is 4.
+        # Asher, I will also need your help here.
         print()
+    elif num == 5: # This is for when the input is 5.
+        for r in range(num):
+            for c in range(9):
+                if (r + c == 4) or (c - r == 4):
+                    print('*', end=' ')
+                elif (c == 4):
+                    print(r, end=' ')
+                else:
+                    print(' ', end=' ')
+            print()
 
-else:
-    print("The input is out of range.")
-"""
-
-
-for r in range(num):
-    for c in range(9):
-        if (r + c == 4) or (c - r == 4):
-            print('*', end=' ')
-        elif (c == 4):
-            print('1', end=' ')
-        else:
-            print(' ', end=' ')
-    print()
+else: # This message appears when the input is out of range.
+    print("This input is out of range.")
