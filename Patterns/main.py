@@ -46,3 +46,5 @@ if num < 6: # This block will be executed only if the input falls within the spe
 # This message appears when the input is out of range.
 else:
     print("This input is out of range.")
+
+# End of program.
