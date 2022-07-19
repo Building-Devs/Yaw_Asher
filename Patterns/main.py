@@ -35,8 +35,15 @@ if num < 6: # This block will be executed only if the input falls within the spe
             print()
 
     elif num == 4: # This is for when the input is 4.
-        # Asher, I will also need your help here.
-        print("This pattern is still under construction.")
+        for row in range(5):
+            for col in range(9):
+                if (row + col == 4) or (col - row == 4):
+                    print('*', end=' ')
+                elif (col == 4):
+                    print(6 - row, end=' ')
+                else:
+                    print(' ', end=' ')
+            print()
 
     elif num == 5: # This is for when the input is 5.
         for row in range(5):
