@@ -1,4 +1,6 @@
-
+# My approach is to figure out the patterns and when I'm done work on the inputs
+# I am not very experienced with functions so you will not see any.
+# As a result I have to repeat a lot of code
 num = 5 #int(input("Input any number from 1 to 5: "))
 """
 for i in range(num):
