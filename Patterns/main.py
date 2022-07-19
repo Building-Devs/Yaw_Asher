@@ -10,8 +10,14 @@ num = int(input("Input any number from 1 to 5: "))
 if num < 6: # This block will be executed only if the input falls within the specified range.
 
     if num == 1: # This is for when the input is 1.
-        # Asher, I will need your help with this pattern.
-        print("This pattern is still under construction.")
+        for row in range(5):
+            for col in range(row, 5):
+                print(' ', end=' ')
+            for col in range(row + 1):
+                print('*', end=' ')
+            for col in range(row):
+                print('*', end=' ')
+            print()
 
     elif num == 2: # This is for when the input is 2.
         for row in range(5):
