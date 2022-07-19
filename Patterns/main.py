@@ -11,7 +11,7 @@ if num < 6: # This block will be executed only if the input falls within the spe
 
     if num == 1: # This is for when the input is 1.
         # Asher, I will need your help with this pattern.
-        print()
+        print("This pattern is still under construction.")
 
     elif num == 2: # This is for when the input is 2.
         for row in range(5):
@@ -20,9 +20,9 @@ if num < 6: # This block will be executed only if the input falls within the spe
             print()
 
     elif num == 3: # This is for when the input is 3.
-        for r in range(5):
-            for c in range(9):
-                if (r + c == 4) or (c - r == 4):
+        for row in range(5):
+            for col in range(9):
+                if (row + col == 4) or (col - row == 4):
                     print('*', end=' ')
                 else:
                     print(' ', end=' ')
@@ -30,15 +30,15 @@ if num < 6: # This block will be executed only if the input falls within the spe
 
     elif num == 4: # This is for when the input is 4.
         # Asher, I will also need your help here.
-        print()
+        print("This pattern is still under construction.")
 
     elif num == 5: # This is for when the input is 5.
-        for r in range(num):
-            for c in range(9):
-                if (r + c == 4) or (c - r == 4):
+        for row in range(5):
+            for col in range(9):
+                if (row + col == 4) or (col - row == 4):
                     print('*', end=' ')
-                elif (c == 4):
-                    print(r, end=' ')
+                elif (col == 4):
+                    print(row, end=' ')
                 else:
                     print(' ', end=' ')
             print()
