@@ -1,0 +1,59 @@
+def assign5():
+# This takes input from the user within the range 1 to 5.
+ num = int(input("Input any number from 1 to 5: "))
+
+# This starts the conditions for the defined range.
+ if num < 6: # This block will be executed only if the input falls within the specified range.
+
+    if num == 1: # This is for when the input is 1.
+        for row in range(5):
+            for col in range(row, 5):
+                print(' ', end=' ')
+            for col in range(row + 1):
+                print('*', end=' ')
+            for col in range(row):
+                print('*', end=' ')
+            print()
+
+    elif num == 2: # This is for when the input is 2.
+        for row in range(5):
+            for col in range(row + 1):
+                print('*', end=' ')
+            print()
+
+    elif num == 3: # This is for when the input is 3.
+        for row in range(5):
+            for col in range(9):
+                if (row + col == 4) or (col - row == 4):
+                    print('*', end=' ')
+                else:
+                    print(' ', end=' ')
+            print()
+
+    elif num == 4: # This is for when the input is 4.
+        for row in range(5):
+            for col in range(9):
+                if (row + col == 4) or (col - row == 4):
+                    print('*', end=' ')
+                elif (col == 4):
+                    print(6 - row, end=' ')
+                else:
+                    print(' ', end=' ')
+            print()
+
+    elif num == 5: # This is for when the input is 5.
+        for row in range(5):
+            for col in range(9):
+                if (row + col == 4) or (col - row == 4):
+                    print('*', end=' ')
+                elif (col == 4):
+                    print(row, end=' ')
+                else:
+                    print(' ', end=' ')
+            print()
+
+# This message appears when the input is out of range.
+ else:
+    print("This input is out of range.")
+    
+assign5()
